@@ -1,0 +1,52 @@
+* {
+  background: #99ccff;;
+} 
+
+.ocean {
+  position: absolute;
+  z-index: 1;
+  bottom: 30px;
+  width: 98%;
+  height: 100px;
+  background:#3987c9;
+}
+
+.sun {
+  width: 100px;
+  height: 100px;
+  position:absolute;
+  top:25;
+  right:25;
+  background: yellow;
+  border-radius: 50%
+}
+
+.hull {
+  position: absolute;
+  border-top: 100px solid blue;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 250px;
+}
+
+.mainsail {
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-right: 150px solid white;
+}
+
+.mast {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+#triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-left: 100px solid red;
+  border-bottom: 50px solid transparent;
+}
