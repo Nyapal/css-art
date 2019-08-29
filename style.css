@@ -1,6 +1,17 @@
-* {
+/* * {
   background: #99ccff;;
-} 
+}  */
+
+* {
+  background: linear-gradient(#87CEFA 50%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #87CEFA 53%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #87CEFA 50%, rgba(255,255,255,0) 0) 55px 0 #3987c9;
+  background-size: 110px 515px;
+  background-repeat: repeat-x;
+}
+.picture {
+  text-align: center
+}
 
 .ocean {
   position: absolute;
@@ -21,32 +32,75 @@
   border-radius: 50%
 }
 
+.daBoat {
+  margin-top: 100px;
+  width: 300px;
+  display: inline-block;
+  animation: 
+    pulse 3s ease infinite alternate, 
+    nudge 5s linear infinite alternate;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+}
+
+@keyframes nudge {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+  
+  50% {
+    transform: translate(150px, 0);
+  }
+  
+  80% {
+    transform: translate(-150px, 0);
+  }
+}
+
 .hull {
-  position: absolute;
-  border-top: 100px solid blue;
+  border-top: 60px solid #855E42;
   border-left: 25px solid transparent;
   border-right: 25px solid transparent;
-  height: 0;
-  width: 250px;
+  width: 300px;
+  transform: translate(5px, 170px)
 }
 
 .mainsail {
-  width: 0;
-  height: 0;
-  border-top: 150px solid transparent;
-  border-right: 150px solid white;
+  margin-top: 7px;
+  margin-left: 35px;
+  float: left;
+  border-top: 150px solid #87CEFA;
+  border-right: 150px solid green;
 }
 
 .mast {
-  width: 100px;
-  height: 100px;
-  background: red;
+  width: 10px;
+  height: 180px;
+  float: left;
+  background:grey;
 }
 
-#triangle-right {
+.jib {
   width: 0;
   height: 0;
-  border-top: 50px solid transparent;
-  border-left: 100px solid red;
-  border-bottom: 50px solid transparent;
+  float: left;
+  margin-top: 15px;
+  border-top: 120px solid #87CEFA;
+  border-left: 80px solid #154C9E;
+  border-bottom: 0px solid transparent;
+}
+
+.wave {
+  background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+  radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+  background-size: 110px 200px;
+  background-repeat: repeat-x;
 }
