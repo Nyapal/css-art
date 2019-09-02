@@ -1,0 +1,73 @@
+.seeds {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  width: 115px;
+  height: 115px;
+  background: brown;
+  border-radius: 50%;
+  z-index:100
+}
+
+.leaves {
+  width: 150px;
+  height: 75px;
+  background: yellow;
+  border-radius: 75px / 45px;
+  border: 1px solid white;
+
+  margin-top: 22%;
+  margin-left: 20%
+}
+.leaf1 {
+  transform: rotate(35deg);
+  margin-top: -75px;
+  margin-left: 15px;
+}
+.leaf2 {
+  transform: rotate(270deg);
+  margin-top: -115px;
+  margin-left: 90px;
+}
+.leaf3 {
+  transform: rotate(140deg);
+  margin-top: -50px;
+  margin-left: 165px;
+}
+.leaf4 {
+  transform: rotate(180deg);
+  margin-top: 0px;
+  margin-left: 190px;
+}
+.leaf5 {
+  transform: rotate(33deg);
+  margin-top: -20px;
+  margin-left: 175px;
+}
+
+.leaf6 {
+  transform: rotate(270deg);
+  margin-top: -50px;
+  margin-left: 100px;
+}
+.leaf7 {
+  transform: rotate(135deg);
+  margin-top: -100px;
+  margin-left: 20px;
+}
+
+.stem {
+  width: 10px;
+  height: 175px;
+  background: green;
+  float: left;
+  margin-left: -195px;
+  margin-top: 75px;
+}
+.pot {
+  border-top: 100px solid brown;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 100px;
+}
